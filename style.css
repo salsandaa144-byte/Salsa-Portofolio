@@ -1,0 +1,298 @@
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #ffc0cb, #ccffcc);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.card {
+    max-width: 600px;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* ======== CARD / CONTAINER ======== */
+.card {
+    max-width: 800px;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff85c1;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem
+}
+/* ======== PROFILE IMAGE (BULET) ======== */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffb6c1; /* pink border */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* ======== FAVORITES ======== */
+.favorites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.favorite-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ff69b4;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Efek saat diklik */
+.favorite-item img.active {
+    transform: scale(1.3) rotate(15deg);
+    box-shadow: 0 10px 20px rgba(255,105,180,0.6);
+}
+.fav-item:hover {
+    transform: scale(1.05);
+}
+/* ======== FORM STYLE (KALAU ADA) ======== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff85c1;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    border-radius: 20px 20px 0 0;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 600px) {
+    .card {
+        margin: 10px;
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+/* Reset dan font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #ffc0cb, #ccffcc);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #ffb6c1;
+}
+
+header h1 {
+    font-family: 'Cursive', sans-serif;
+    color: #ff69b4;
+    font-size: 2.5rem;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff69b4;
+}
+
+/* Section umum */
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+/* Foto profil */
+.profile-pic {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff69b4;
+}
+
+/* Tentang saya */
+.about-me p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* Favorit */
+.favorites {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.favorite-item {
+    text-align: center;
+    margin: 1rem;
+}
+
+.favorite-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ff69b4;
+}
+
+/* Contact */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 0.7rem;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #ff1493;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 2rem;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .favorites {
+        flex-direction: column;
+        align-items: center;
+    }
+}
